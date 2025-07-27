@@ -1,8 +1,8 @@
 
 def custom_operation(input_file):
     """
-    Excelファイルに対するカスタム操作を行う関数。
-    現時点では、入力されたファイル名をそのまま返す。
+    A function to perform custom operations on an Excel file.
+    Currently, it returns the input file name as is.
     """
-    # 将来的に、ここにExcelファイルを変更するコードが追加されます。
+    # In the future, code to modify the Excel file will be added here.
     return input_file
