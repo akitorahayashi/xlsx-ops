@@ -8,7 +8,7 @@ The primary goal of this project is to enable AI agents to autonomously interact
 
 ## Directory Structure
 
-```
+```text
 /
 |-- xlsx_to_csv.py
 |-- csv_output/
@@ -24,7 +24,7 @@ The primary goal of this project is to enable AI agents to autonomously interact
 - **`xlsx_to_csv.py`**: The Python script that converts Excel files to CSV.
 - **`csv_output/`**: The directory where the output CSV files are saved.
 - **`input/`**: The directory where you should place your `.xlsx` files.
-- **`custom_operation.py`**: A script where the AI agent will write code to manipulate the Excel file based on its understanding of the CSV files.
+- **`custom_operation.py`**: A script where the AI agent will write code to manipulate the Excel file based on its understanding of the CSV files. *(To be implemented)*
 - **`main.py`**: The main script to run the entire process.
 
 ## How to Use
@@ -55,7 +55,7 @@ The script uses the `pandas` library to convert each sheet into CSV format.
 - **Cell Positioning**: The first row and column in the CSV correspond to the Excel sheet structure. The AI agent uses this correspondence to interpret the cell positions.
 
 Example output:
-```
+```csv
 Product,Price,Sales
 Apple,150,30
 Orange,100,50
