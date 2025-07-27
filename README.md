@@ -1,10 +1,6 @@
 # Excel to CSV Converter
 
-This project provides a Python script to convert Excel files (.xlsx) into CSV files, making them readable and understandable for AI agents.
-
-## Overview
-
-The primary goal of this project is to enable AI agents to autonomously interact with Excel files. Since AI agents cannot directly read the binary content of `.xlsx` files, this script converts each sheet of an Excel file into a separate CSV file. This allows the agent to understand the structure and content of the Excel file, enabling it to perform data manipulation tasks.
+This is a template project designed for an AI agent to read and autonomously manipulate Excel data. The ultimate goal is for the AI agent to understand the contents of an .xlsx file and automatically generate Python code to edit the file based on user instructions.
 
 ## Directory Structure
 
@@ -24,28 +20,24 @@ The primary goal of this project is to enable AI agents to autonomously interact
 - **`xlsx_to_csv.py`**: The Python script that converts Excel files to CSV.
 - **`csv_output/`**: The directory where the output CSV files are saved.
 - **`input/`**: The directory where you should place your `.xlsx` files.
-- **`custom_operation.py`**: A script where the AI agent will write code to manipulate the Excel file based on its understanding of the CSV files. *(To be implemented)*
+- **`custom_operation.py`**: A script where the AI agent writes the Python code to manipulate the Excel file.
 - **`main.py`**: The main script to run the entire process.
 
 ## How to Use
 
-### Prerequisites
+Place your Excel (.xlsx) file in the input directory.
 
-Install the required Python packages:
-```bash
-pip install pandas openpyxl
-```
+Run the xlsx_to_csv.py script to convert each sheet into a separate CSV file in the csv_output directory.
 
-1. **Place your Excel file in the `input` directory.**
-   - Make sure the file has a `.xlsx` extension.
+Review the generated CSV files to understand the structure of your Excel data.
 
-2. **Run the conversion script.**
-   ```bash
-   python xlsx_to_csv.py
-   ```
+Provide instructions to the AI agent on how you want to modify the .xlsx file. For example: "In the sheet named 'Orders', calculate the sum of the 'Order Amount' column and place the total in the 'Total' section."
 
-3. **Check the `csv_output` directory.**
-   - The script will generate a CSV file for each sheet in the Excel file. The filename will be `{sheet_name}.csv`.
+The AI agent will analyze the CSV files to understand the .xlsx structure and then write the necessary Python code into custom_operation.py to perform the requested modifications. Note: The AI agent must only modify custom_operation.py and must not alter main.py.
+
+Run main.py to execute the code in custom_operation.py.
+
+Find the modified .xlsx file in the output directory.
 
 ## CSV Format
 
