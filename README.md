@@ -1,4 +1,4 @@
-# Excel to CSV Converter
+# Overview
 
 This is a template project designed for an AI agent to read and autonomously manipulate Excel data. The ultimate goal is for the AI agent to understand the contents of an .xlsx file and automatically generate Python code to edit the file based on user instructions.
 
