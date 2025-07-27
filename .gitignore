@@ -4,8 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-*.xlsx
-
 # C extensions
 *.so
 
