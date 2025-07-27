@@ -73,3 +73,10 @@ venv.bak/
 *.json
 *.xml
 *.dat
+
+# Environment variables
+.env
+
+# output/ ディレクトリ内の .gitkeep 以外を無視
+output/*
+!output/.gitkeep
