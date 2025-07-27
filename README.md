@@ -23,20 +23,6 @@ This is a template project designed for an AI agent to read and autonomously man
 - **`custom_operation.py`**: A script where the AI agent writes the Python code to manipulate the Excel file.
 - **`main.py`**: The main script to run the entire process.
 
-## Setup
-
-### Prerequisites
-
-- Python 3.9 or higher
-- `pip` for package installation
-
-### Installation
-
-Install the required Python packages:
-```bash
-pip install pandas openpyxl
-```
-
 ## How to Use
 
 Place your Excel (.xlsx) file in the input directory.
@@ -72,3 +58,17 @@ Total,,80
 
 - **Data Structure Comprehension**: The AI agent can intuitively understand the data structure of each sheet.
 - **Rational Decision Making**: By understanding the context of the data, the AI agent can perform reasonable operations based on abstract instructions.
+
+## Setup
+
+### Prerequisites
+
+- Python 3.9 or higher
+- [Poetry](https://python-poetry.org/) for dependency management
+
+### Installation
+
+Install the required Python packages using Poetry:
+```bash
+poetry install
+```
