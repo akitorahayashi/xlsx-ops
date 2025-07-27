@@ -6,8 +6,8 @@ This is a template project designed for an AI agent to read and autonomously man
 
 ```text
 /
-|-- xlsx_to_csv.py
 |-- csv_output/
+|   |-- xlsx_to_csv.py
 |   |-- sheet1.csv
 |   `-- product_list.csv
 |-- input/
@@ -17,17 +17,31 @@ This is a template project designed for an AI agent to read and autonomously man
 ...
 ```
 
-- **`xlsx_to_csv.py`**: The Python script that converts Excel files to CSV.
+- **`csv_output/xlsx_to_csv.py`**: The Python script that converts Excel files to CSV.
 - **`csv_output/`**: The directory where the output CSV files are saved.
 - **`input/`**: The directory where you should place your `.xlsx` files.
 - **`custom_operation.py`**: A script where the AI agent writes the Python code to manipulate the Excel file.
 - **`main.py`**: The main script to run the entire process.
 
+## Setup
+
+### Prerequisites
+
+- Python 3.9 or higher
+- `pip` for package installation
+
+### Installation
+
+Install the required Python packages:
+```bash
+pip install pandas openpyxl
+```
+
 ## How to Use
 
 Place your Excel (.xlsx) file in the input directory.
 
-Run the xlsx_to_csv.py script to convert each sheet into a separate CSV file in the csv_output directory.
+Run the `csv_output/xlsx_to_csv.py` script to convert each sheet into a separate CSV file in the same directory.
 
 Review the generated CSV files to understand the structure of your Excel data.
 

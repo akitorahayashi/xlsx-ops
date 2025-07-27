@@ -6,7 +6,7 @@ This document's purpose is to ensure that you, the AI agent, clearly understand 
 
 Analyze the Data Structure: Begin by reading the CSV files located in the csv_output directory. These files are generated from the user's original .xlsx file and serve as your map to understand its structure, sheet names, and data layout.
 
-Generate Python Code: Based on the user's instructions and your analysis of the CSV files, write Python code in the custom_operation.py script. This code will use the openpyxl library to perform the required edits on the original .xlsx file.
+Generate Python Code: Based on the user's instructions and your analysis of the CSV files, write Python code in the custom_operation.py script. This code will use the `openpyxl` and `pandas` libraries to perform the required edits on the original .xlsx file.
 
 Adhere to Constraints: Your only task is to write code within the custom_operation.py file. You must not modify any other file, including main.py.
 
